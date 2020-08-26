@@ -5,7 +5,7 @@ import React from 'react'
 //alt 1, react sätt
 function ButtonSend(props) {
     const { label } = props; // const eftersom man inte vill ändra på props
-    return <button>{label}</button>;
+    return <button className="btn btn-primary btn-block">{label}</button>;
   }
 
   export default ButtonSend;
