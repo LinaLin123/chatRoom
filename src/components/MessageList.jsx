@@ -19,8 +19,8 @@ export default function MessageList({messages}) {
 
     return (
       <ul className="list-group">
-{messageArray.map(item=> {
-    console.log(item)
+{messageArray.reverse().map(item=> {
+    // console.log(item) // får ut varje item
     const key = item[0]
     const messageData = item[1]
     const message= messageData.message

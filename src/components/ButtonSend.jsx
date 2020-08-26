@@ -4,8 +4,13 @@ import React from 'react'
 
 //alt 1, react sätt
 function ButtonSend(props) {
-    const { label } = props; // const eftersom man inte vill ändra på props
-    return <button className="btn btn-primary btn-block">{label}</button>;
+    const { label, handleOnClick } = props; // const eftersom man inte vill ändra på props
+    //*3 tar emot prop från parent dvs från Messageform 
+    
+    return <button 
+    //trigga prop-funktionen när någon trycker på knappen.
+    onClick= {handleOnClick}
+    className="btn btn-primary btn-block">{label}</button>;
   }
 
   export default ButtonSend;
